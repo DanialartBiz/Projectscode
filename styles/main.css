@@ -1,0 +1,224 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+html {
+	font-size: 62.5%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
+	overflow-y: scroll; /* Keeps page centred in all browsers regardless of content height */
+	-webkit-text-size-adjust: 100%; /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+	-ms-text-size-adjust: 100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+}
+body {
+color: #4b4b4b;
+font-family: 'Open Sans', sans-serif;
+font-size: 14px;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+#hgroup,
+nav,
+section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+table { /* tables still need 'cellspacing="0"' in the markup */
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+a:focus {
+	outline: thin dotted;
+}
+a:hover,
+a:active { /* Improves readability when focused and also mouse hovered in all browsers people.opera.com/patrickl/experiments/keyboard/test */
+	outline: 0;
+}
+a img {
+	border: 0;
+}
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+header {
+	float: left;
+	width: 100%;
+	height: 73px;
+	background: #e67e22;
+	min-width: 1024px;
+}
+header .logo {
+	float: left;
+	margin: 14px 0 0 49px;
+}
+nav#topnav {
+	float: right;
+	margin-right: 168px;
+	height: 73px;
+}
+#topnav li {
+	float: left;
+	text-align: center;
+	font-size: 14px;
+	transition:0.6s all;
+}
+#topnav li a {
+		padding: 31px 39px 19px 38px;
+		float: left;
+		color: white;
+		text-decoration: none;
+}
+#topnav li:hover, #topnav li:active {
+		border-bottom: 3px solid #763700;
+		background: #fa8a26;
+		transition:0.6s all;
+}
+#info-block {
+	float: left;
+	width: 100%;
+	min-width: 1024px;
+	height: 492px;
+	background: url(../images/citybg.png) center center repeat-x;
+}
+.container {
+	width: 1031px;
+	margin: 0 auto;
+}
+#info-block h1 {
+	font-size: 18px;
+	color: #4c4c4c;
+	padding: 16px 0px 18px 16px;
+	text-transform: uppercase;
+	width: 502px;
+	display: none;
+	margin-top: 65px;
+	float: left;
+	background: rgba(255,255,255, 0.94);
+}
+#info-block span {
+	float: left;
+	background: rgba(255,255,255, 0.94);
+	font-size: 13px;
+	color: #1e1e1e;
+	text-transform: uppercase;
+	width: 648px;
+	padding: 14px 0 14px 16px;
+	display: none;
+	margin-top: 14px;
+}
+#dvLoading {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: url(../images/loading.gif) center center no-repeat;
+		background-color: white;
+	z-index: 99;
+}
+button {
+	text-align: center;
+	background: #e67e22;
+	color: white;
+	font-size: 12px;
+	cursor: pointer;
+	border:none;
+	padding: 17px 37px 14px 37px;
+	transition:0.7s all;
+}
+button:hover {
+	background: #402004;
+	transition:0.7s all;
+}
+button#order {
+	float: left;
+	clear: both;
+	margin-top: 17px;
+}
+.sound-off {
+	float: right;
+	background:rgba(255,255,255, 0.65);
+	right: 10px;
+	top: 15%;
+	cursor: pointer;
+	padding: 8px;
+	position: fixed;
+}
+#about-us {
+	float: left;
+	width: 100%;
+}
+.title-box {
+	width: 881px;
+	height: 6px;
+	font-size: 22px;
+	background: url(../images/line-grey.gif) top center no-repeat;
+	text-align: center;
+	font-weight: 600;
+	margin: 49px auto 0;
+}
+.title-box > div {
+position: relative;
+    top: -13px;
+}
+#about-us .text {
+	text-align: center;
+	width: 892px;
+	margin: 36px auto 0;
+}
+button#calculate {
+float: left;
+margin: 19px 0 0 371px;
+}
+#about-us .text span {
+	margin-top: 42px;
+	font-weight: 600;
+	font-size: 16px;
+}
+#modal-window {
+	display: none;
+}
+#portfolio {
+	float: left;
+	width: 100%;
+	height: 471px;
+	background: #272727;
+	margin-top: 85px;
+}
+#portfolio .title-box {
+	background:url(../images/line-white.png) no-repeat;
+	color: white;
+
+}
